@@ -12,19 +12,117 @@
       html,
       body {
         height: 100%;
+        background-color: #e7eff4;
+         margin: 0;
       }
-      body {
-        margin: 0;
+      body{
+        margin-top: -17px;
       }
-
       #webchat {
-        height: 100%;
-        width: 100%;
+        height: 62%;
+        width: 22%;
+        margin-left: 60px;
+      }
+      button.ac-pushButton.style-default {
+          background-color: #e1ebf1;
+          border: none;
+          color: #44667f;
+          font-size: 11px;
+          padding: 16px 10px;
+      }
+      button.ac-pushButton.style-default:hover{
+         background-color: #00adee;
+         color:#fff;
+      }
+      .css-gtdio3.css-mfy564 {
+        flex: 0.95 1 0%;
+      }
+      .main {
+        padding: 4px 10px;
+      }
+      .css-115fwte svg {
+       fill: #00adee;
+      }
+      .css-115fwte svg:hover {
+       fill: #00adee;
+      }
+      .css-115fwte:hover{
+        fill: #00adee;
+        color:#00adee;
+      }
+      #header{
+        height: 67px;
+        text-align: center;
+        background-color: #fff;
+        display: block;
+        line-height: 63px;
+      }
+      #header h2{
+        color: #355873;
+        font-size: 20px;
+        font-family: arial;
+      }
+      #top-sec{
+        height: 166px;
+        width: 22%;       
+        background-color: #012d4f;
+        margin-left: 60px;
+        margin-top: 35px;
+      }
+      .in-sec {
+        padding: 4px 19px;
+        color: #93b5cc;
+        font-family: arial;
+        font-size: 12px;
+        }
+      .in-sec ul{
+        padding-left: 14px;
+      }
+      .in-sec ul li{
+        line-height: 17px;
+      }
+      .css-fawxas:not(.from-user) > .webchat__bubble__content {
+        border: none;
+      }
+      .css-eycyw2.css-1882x3w.css-1l9a57c {
+        margin-top: 64px;
+      }
+      .css-1t62idy.css-990gl9 {
+        background-color: #e7eff4;
+      }
+      .css-gtdio3.css-mfy564 {
+        background-color: #fff;
+      }
+      .bt-sec{
+        height: 36px;
+        width: 22%;       
+        background-color: #012d4f;
+        position: absolute;
+        bottom: 100px;
+        left: 60px;
       }
     </style>
   </head>
   <body>
-    <div id="webchat" role="main"></div>
+    <div id="header">
+      <h2>Chat with Thuso</h2>
+    </div>
+    <div id="top-sec"> 
+      <div class="in-sec">
+        <h4>Hi, Pascale Shera!</h4>
+        <ul>
+          <li>Please note that all chats with Thuso and agents are recorded for quality and audit purposes.</li>
+          <li>By using this facility you fully agree to comply with all IM policies.</li>
+        </ul>
+        <h4>What can i assist you with today?</h4>
+      </div>
+    </div>
+    <div class="bt-sec">
+      
+    </div>
+    <div id="webchat" role="main">
+      
+    </div>
     <script>
       (async function() {
         // In this demo, we are using Direct Line token from MockBot.
